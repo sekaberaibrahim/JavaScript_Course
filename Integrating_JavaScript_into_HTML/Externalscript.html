@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External JavaScript</title>
+    <script src="script.js" defer></script> <!-- The 'defer' attribute is optional -->
+</head>
+<body>
+    <h1>Hello World</h1>
+    <button id="myButton">Click Me!</button>
+
+    <script>
+        // This script can also go in an external file (script.js)
+        document.getElementById("myButton").onclick = function() {
+            alert("Button clicked!");
+        };
+    </script>
+</body>
+</html>
